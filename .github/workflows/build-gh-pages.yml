@@ -12,7 +12,7 @@ name: Push website/public directory to gh-pages branch
 
 # Run whenever the `website/public` folder in the `main` branch changes.
 on:
-  push:
+  pull_request:
     branches:
       - "main"
     paths:

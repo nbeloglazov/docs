@@ -4,7 +4,7 @@ const { sassPlugin } = require("esbuild-sass-plugin");
 const prettier = require("prettier");
 
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
 
   eleventyConfig.setNunjucksEnvironmentOptions({
     lstripBlocks: true,
