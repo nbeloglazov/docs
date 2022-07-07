@@ -15,7 +15,7 @@ See the [terraform deploy system docs](terraform-deploy-system.md).
 
 ## Deploying into AWS using CloudFormation
 
-Our production infrastructure is managed declaratively by [cloudformation](https://github.com/seattle-uat/civiform-deploy/tree/main/infra). To deploy, `run bin/deploy-prod`. You will need the AWS CLI - `brew install awscli`.
+Our production infrastructure is managed declaratively by [cloudformation](https://github.com/seattle-uat/civiform-deploy/tree/main/infra). To deploy, run [`bin/deploy`](https://github.com/seattle-uat/civiform-deploy/tree/main/bin/deploy). You will need the AWS CLI - `brew install awscli`.
 
 Production can also be deployed by kicking off the workflow for this prober [here](https://github.com/seattle-uat/civiform/actions/workflows/cron.yaml). We have turned off scheduled probe and deploys for now.
 
