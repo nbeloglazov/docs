@@ -29,8 +29,9 @@ jobs:
       # Push the `website/public` directory to `gh-pages` via `git subtree push`
       - name: Build
         uses: TartanLlama/actions-eleventy@master
+        working-directory: ./website
         with:
-          args: --input website/src --output website/public
+          args: --output public
           install_dependencies: true
 
       - name: Deploy
